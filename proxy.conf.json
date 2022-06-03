@@ -1,0 +1,22 @@
+{
+  "/clientes/*": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/cuentas/*": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/movimientos/*": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/reporte/*": {
+    "target": "http://localhost:8080",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

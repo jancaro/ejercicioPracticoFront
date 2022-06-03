@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+}
+
+button, label, input, select {
+  padding: 5px;
+  margin: 3px;
+}
+
+button {
+  background: #e2e238;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.label-select {
+  width: 47% !important;
+}
+
+.input-password {
+  width: 39%;
+}
+
+.icon{
+  background: none;
+  width: 10%;
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.container-form form div {
+  width: 50%;
+  display: flex;
+}
+
+.container-form form div label,input,select {
+  width: 50%;
+}
+
+nav {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+}
+
+nav a{
+  width: 33%;
+}
+
+.container-table {
+  width: 100%;
+}
+
+.container-table table {
+  width: 100%;
+  border: solid 2px black;
+  border-collapse: collapse;
+}
+
+.container-table table thead {
+  border: solid 1px black;
+}
+
+.container-table table tbody tr {
+  text-align: center;
+}
+
+.container-buttons {
+  margin-top: 10px;
+}
+
+.container-search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.container-search input {
+  width: 30% !important;
+}
