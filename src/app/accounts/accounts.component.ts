@@ -3,7 +3,7 @@ import {AccountModel} from "../models/account.model";
 import {ClientModel} from "../models/client.model";
 import {ClientsService} from "../services/clients/clients.service";
 import {AccountsService} from "../services/accounts/accounts.service";
-import {MessageService} from "../message.service";
+import {AlertService} from "../services/alert/alert.service";
 
 @Component({
   selector: 'app-accounts',
@@ -33,7 +33,7 @@ export class AccountsComponent implements OnInit {
 
   constructor(private clientsService: ClientsService,
               private accountsService: AccountsService,
-              private messageService: MessageService) { }
+              private messageService: AlertService) { }
 
   ngOnInit(): void {
     this.getClients();

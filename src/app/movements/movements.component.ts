@@ -7,7 +7,7 @@ import {ClientModel} from "../models/client.model";
 import {MovementModel} from "../models/movement.model";
 import {ReportModel} from "../models/report.model";
 import {ReportsService} from "../services/reports/reports.service";
-import {MessageService} from "../message.service";
+import {AlertService} from "../services/alert/alert.service";
 
 @Component({
   selector: 'app-movements',
@@ -41,7 +41,7 @@ export class MovementsComponent implements OnInit {
               private accountsService: AccountsService,
               private movementsService: MovementsService,
               private reportsService: ReportsService,
-              private messageService: MessageService) { }
+              private messageService: AlertService) { }
 
   ngOnInit(): void {
     this.getClients();

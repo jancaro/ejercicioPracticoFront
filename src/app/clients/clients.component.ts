@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import {ClientModel} from "../models/client.model";
 import {ClientsService} from "../services/clients/clients.service";
-import {MessageService} from "../message.service";
+import {AlertService} from "../services/alert/alert.service";
 
 @Component({
   selector: 'app-clients',
@@ -35,7 +35,7 @@ export class ClientsComponent implements OnInit {
   };
 
   constructor(private clientsService: ClientsService,
-              private messageService: MessageService) {
+              private messageService: AlertService) {
   }
 
   ngOnInit(): void {
